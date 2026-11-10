@@ -1,0 +1,126 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+body {
+   background-color: #f4f6f8;
+    color: #333;
+   line-height: 1.6;
+}
+
+header {
+   background-color: #2196F3;
+   color: white;
+   text-align: center;
+   padding: 30px 15px;
+}
+
+/* Layout: Maximum width 800px, Centered, Responsive padding, Proper spacing */
+main {
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.form-section, .table-section {
+   background: white;
+   padding: 25px;
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #2196F3;
+}
+
+/* Form styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+   margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* 4. Focus states for form elements */
+input:focus, select:focus, textarea:focus {
+  border-color: #2196F3;
+  outline: none;
+box-shadow: 0 0 5px rgba(33, 150, 243, 0.4);
+}
+
+button {
+  background-color: #2196F3;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+/* Table styling */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+ border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #2196F3;
+   color: white;
+}
+
+/* Striped rows - #f9f9f9 for even rows */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+  background-color: #eef3ff;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  main {
+  padding: 0 10px;
+}
+  .form-section, .table-section {
+   padding: 15px;
+  }
+}
